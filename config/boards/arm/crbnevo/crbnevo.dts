@@ -18,6 +18,7 @@
 		zephyr,flash = &flash0;
 		zmk,kscan = &kscan0;
 		zmk,backlight = &backlight;
+		zephyr,console = &cdc_acm_uart;
 	};
 
 	kscan0: kscan_0 {
@@ -109,6 +110,10 @@
 
 &usbd {
 	status = "okay";
+	cdc_acm_uart: cdc_acm_uart {
+    compatible = "zephyr,cdc-acm-uart";
+    label = "CDC_ACM_0";
+  };
 };
 
 
