@@ -34,11 +34,11 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (crbnevo)
-        run: west build -s zmk/app -b crbnevo -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -b alu40 -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: crbnevo Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 crbnevo.uf2
+        run: cp build/zephyr/zmk.uf2 alu40.uf2
       - name: Archive (crbnevo)
         uses: actions/upload-artifact@v2
         with:

@@ -1,5 +1,5 @@
-identifier: bt65
-name: bt65
+identifier: alu40
+name: alu40
 type: mcu
 arch: arm
 toolchain:
