@@ -103,18 +103,6 @@
 	status = "okay";
 };
 
-&i2c0 {
-	compatible = "nordic,nrf-twi";
-	sda-pin = <17>;
-	scl-pin = <20>;
-};
-
-&uart0 {
-	compatible = "nordic,nrf-uarte";
-	tx-pin = <6>;
-	rx-pin = <8>;
-};
-
 &usbd {
 	status = "okay";
 	cdc_acm_uart: cdc_acm_uart {
@@ -169,8 +157,8 @@
 	status = "okay";
 	mosi-pin = <20>;
 	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-	sck-pin = <27>;
-	miso-pin = <11>;
+	sck-pin = <38>;
+	miso-pin = <37>;
 
 	led_strip: ws2812@0 {
 		compatible = "worldsemi,ws2812-spi";
