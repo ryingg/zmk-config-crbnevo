@@ -23,6 +23,11 @@
 		zephyr,console = &cdc_acm_uart;
 	};
 
+	sensors {
+			compatible = "zmk,keymap-sensors";
+			sensors = <&encoder_1>;
+		};
+
 	kscan0: kscan_0 {
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN";
