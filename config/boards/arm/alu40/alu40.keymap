@@ -51,7 +51,7 @@
 		control {
 			bindings = <
 				&reset &bootloader &bt BT_CLR &bt BT_PRV &bt BT_NXT &trans &trans &trans &trans &trans &trans &trans
-				&bl BL_TOG &bl BL_CYCLE &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 			>;
