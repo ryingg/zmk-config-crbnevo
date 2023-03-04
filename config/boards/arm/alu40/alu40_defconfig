@@ -9,6 +9,7 @@ CONFIG_ARM_MPU=y
 
 # enable GPIO
 CONFIG_GPIO=y
+CONFIG_SPI=y
 
 # encoder
 CONFIG_EC11=y
